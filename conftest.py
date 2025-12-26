@@ -9,7 +9,7 @@ def browser():
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(options=options)
     url ="https://d3ldvcrr82x82a.cloudfront.net/"
     driver.get(url)
     driver.maximize_window()
